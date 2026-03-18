@@ -7,19 +7,19 @@
   tasks:
     - name: Create project directory
       file:
-        path: myproject
+        path: /tmp/myproject
         state: directory
     
     - name: Create README.md
       copy:
-        dest: myproject/README.md
+        dest: /tmp/myproject/README.md
         content: |
           # My Project
           Managed by Ansible
     
     - name: Create config.txt
       copy:
-        dest: myproject/config.txt
+        dest: /tmp/myproject/config.txt
         content: "version=1.0"
     
     - name: Print completion message
