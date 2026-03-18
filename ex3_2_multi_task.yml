@@ -1,7 +1,7 @@
 ---
 
 - name: Multi-task project setup
-  hosts: localhost
+  hosts: all
   connection: local
   gather_facts: false
   tasks:
