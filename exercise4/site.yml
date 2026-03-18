@@ -3,7 +3,11 @@
 - name: Simple Web Setup
 
   hosts: web
+
   become: true
+
   gather_facts: false
+
   roles:
+
     - webserver
